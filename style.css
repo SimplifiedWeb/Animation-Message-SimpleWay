@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+#first {
+  width: 250px;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  position: absolute;
+  background-color: green;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: modelanimation;
+          animation-name: modelanimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#first #close {
+  font-size: 30px;
+}
+#first #close:hover {
+  background-color: red;
+}
+
+.modelcontainer {
+  position: absolute;
+  bottom: 17%;
+  left: 10%;
+}
+.modelcontainer #open {
+  width: 200px;
+  height: 150px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modelcontainer #open:hover {
+  background-color: lightgray;
+}
+
+#first {
+  display: none;
+}
+
+@-webkit-keyframes modelanimation {
+  from {
+    top: -10%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes modelanimation {
+  from {
+    top: -10%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

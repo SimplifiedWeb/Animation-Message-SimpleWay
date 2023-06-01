@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: lightblue;
+    position: relative;
+}
+#first{
+
+  
+        width: 250px;
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between ;
+        font-size: 20px;
+        position: absolute;
+        background-color: green;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        animation-name: modelanimation;
+        animation-duration: 1s;
+
+
+        #close {
+            font-size: 30px;
+
+            &:hover{
+                background-color: red;
+            }
+        }
+        
+    
+}
+
+.modelcontainer{
+    position: absolute;
+    bottom: 17%;
+    left: 10%;
+    
+
+    #open{
+        width: 200px;
+        height: 150px;
+        border: 2px solid white;
+        background-color: transparent;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+
+
+        &:hover{
+            background-color: lightgray;
+        }
+
+    }
+}
+
+#first{
+    display: none;
+
+}
+
+@keyframes modelanimation {
+    from{
+        top: -10%;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+    
+}
